@@ -160,3 +160,36 @@ const averageCalories = menu.reduce((acc, comida) => {
 }, 0);
 
 console.log(averageCalories);
+
+// .sort
+//Nos ordena un arreglo y NO va a devolver un nuevo arreglo
+
+const developers = ["Mau", "Gerardo", "Alan", "Joaquin"];
+
+//Para ordenar un arrego de strings basta con hacer lo siguente
+const arrSorted = developers.sort();
+
+console.log(arrSorted);
+
+const arr5 = [12, 23, 45, 32, 78];
+
+//Orden de mayor a menor
+
+const deMayoraMenor = arr5.sort((a, b) => {
+  return b - a;
+});
+console.log(deMayoraMenor);
+console.log("arr5", arr5);
+
+const deMenoraMayor = arr5.sort((a, b) => {
+  return a - b;
+});
+
+console.log(deMenoraMayor);
+console.log("arr5", arr5);
+console.log("arr5", arr5);
+
+const reverse = developers.reverse();
+
+console.log(reverse);
+console.log(developers);
